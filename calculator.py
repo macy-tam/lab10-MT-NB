@@ -18,10 +18,7 @@ def subtract(a, b):
 def multiply(a, b):
     a * b
 
-def divide(a, b):
-    if a == 0:
-        raise ZeroDivisionError
-    b / a
+
 
 def logarithm(a, b):
     if b<=0:

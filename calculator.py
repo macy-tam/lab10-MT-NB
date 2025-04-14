@@ -10,29 +10,29 @@ One function per operation, in order.
 import math
 # First example
 def square_root(a):
-    if a == 0:
+    if a < 0:
         raise ValueError
 
     return math.sqrt(a)
 
 def hypotenuse(a, b):
-    math.hypot(a, b)
+    return math.hypot(a, b)
 
 def subtract(a, b):
-    a - b
+    return a - b
 
 def logarithm(a, b):
     if b<=0:
         raise ValueError
-    math.log(b,a)
+    return math.log(b,a)
 
-def add(a, b): a + b
+def add(a, b): return a + b
 
-def mul(a, b): a * b
+def mul(a, b): return a * b
 
 def div(a, b): # raise ZeroDivisionError if a == 0
     if a == 0:
         raise ZeroDivisionError
-    else: b / a
+    else: return b / a
 
-def exp(a, b): a**b
+def exp(a, b): return a**b
